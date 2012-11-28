@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @domain.name
+%p
+  %b Url:
+  = @domain.url
+%p
+  %b User:
+  = @domain.user
+
+= link_to 'Edit', edit_domain_path(@domain)
+\|
+= link_to 'Back', domains_path

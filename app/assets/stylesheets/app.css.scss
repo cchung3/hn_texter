@@ -1,0 +1,129 @@
+@import "bootstrap";
+
+$bg_min_width:1000px;
+$footer_height:40px;
+$topbar_height:60px;
+
+
+.font-1, .font-1 a {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.font-2, font-2 a {
+	/* This one can't be bold */
+	font-family: 'Muli', sans-serif;
+}
+
+html, body {
+	height:100%;
+/*	background:url(/assets/background4.png) !important;*/
+}
+
+h1 {
+	margin-bottom:20px;
+	font-family:'Open Sans', sans-serif;
+}
+
+
+
+textarea {
+	height:100px;
+}
+.flash {
+	font-size:20px;
+}
+
+
+#main_container {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position:relative !important;
+	margin: 0 auto (-1*$footer_height) auto;
+}
+
+
+#footer {
+	position:relative;
+	height: $footer_height;
+	color:lightgray;
+
+	#footer_contents {
+		line-height:$footer_height;
+	}
+
+}
+
+
+#main_container > .container {
+    padding-top: $topbar_height;
+}
+
+.push_footer {
+	height: $footer_height + $topbar_height;
+	clear:both;
+}
+
+
+
+.clear {
+	clear:both;
+	height:0;
+}
+
+.left {float:left;}
+.right {float:right;}
+
+.gray {color:gray; a{color:gray;}}
+.black {color:black; a{color:black;}}
+
+.red {color:red; a{color:red;}}
+.green {color:green; a{color:green;}}
+
+.white {
+	color:white !important;
+	 a{color:white !important;}
+	i{color:white !important}
+	}
+
+.small {font-size:10px}
+
+.ml {margin-left:8px}
+.ml2 {margin-left:16px}
+
+#logged_in_btn {
+	float:right;
+	line-height: 3em;
+	a {color:black;}
+}
+
+.center { text-align:center;}
+
+.user {
+
+	margin:4px 0;
+	border: 1px solid orange;
+	padding: 4px;
+	color:lightgray;
+	a {
+		font-size:20px;
+	}
+
+}
+#email, #edit-link {
+	text-align:center;
+	display:block;
+}
+
+#edit-link {
+	margin-top:18px;
+}
+
+#domains {
+	text-align:center;
+	margin-bottom:20px;
+}
+
+.domain {
+	margin-bottom:20px;
+}

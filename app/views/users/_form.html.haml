@@ -1,0 +1,6 @@
+.center
+	= simple_form_for @user, :html => { :class => 'form-vertical' } do |f|
+		= f.input :email, label: false, placeholder: "EMAIL"
+		= f.input :phone, label: false, placeholder: "123-456-7890"
+		= f.input :password, label: false, placeholder: "PASSWORD"
+		= f.button :submit, "REGISTER", :class => 'btn-primary btn-large'

@@ -1,0 +1,15 @@
+-title @user.email
+
+
+#domains
+	%strong Your domains:
+	=render @user.domains
+	=link_to "Add domain", new_domain_path, class: "btn btn-primary"
+
+
+#email
+	=@user.phone
+	%br
+	= link_to "Edit", edit_user_path(@user)
+	%br
+	= link_to "delete account", @user, method: :delete, data: {confirm: "Are you sure? This will delete your free account."}

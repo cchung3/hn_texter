@@ -1,0 +1,27 @@
+== Hacker News Alerts
+
+For https://bountify.co/1R. Sends sms and email to registered users when their link ends up on news.ycombinator/newest.
+
+== Getting Started
+
+1. Set your ENV variables for:
+
+    SITE_EMAIL
+    SITE_PASSWD	
+    TWILIO_ACCOUNT_SID
+    TWILIO_AUTH_TOKEN
+    TWILIO_NUMBER
+
+If not using gmail, change setup_mail.rb in initializers.
+
+== To use
+
+To crawl and text/email all appropriate users:
+
+    rake crawl
+
+Set up a cron job so that runs ever 1/2 hour or so I guess.
+
+== Todo
+
+Lots. Background jobs. Cron task for `rake crawl`.

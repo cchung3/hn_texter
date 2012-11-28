@@ -1,0 +1,9 @@
+-title "Log in"
+
+.center
+	=simple_form_for :session, url: sessions_path, html: {class: "form-vertical"} do |f|
+		= f.input :email, label: false, placeholder: "EMAIL"
+		= f.input :password, label: false, placeholder: "PASSWORD"
+		-# = f.input :remember_me, :as => :boolean, inline_label: "Remember me", label: false
+		= f.button "submit", "Log in now"
+		= link_to "Password problems?", new_password_reset_path

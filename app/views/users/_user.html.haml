@@ -1,0 +1,9 @@
+.user
+	=link_to content_tag(:span, ''), user	# To make the whole div clickable
+	.font-4.left=link_to user.name, user # This link doesn't actually work
+	.right
+		=time_ago_in_words user.created_at
+		ago
+	.clear
+-# .user
+-# 	=link_to user.email, user

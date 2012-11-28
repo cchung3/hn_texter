@@ -1,0 +1,6 @@
+= simple_form_for(@domain) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :url, placeholder: "mydomain.com (omit the http)"
+    = f.button :submit
